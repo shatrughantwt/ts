@@ -1,6 +1,6 @@
  class Chai{
     flavour: string;
-    price: number
+    // price: number
 
     // constructor(flavour:string, price: number){
     //     this.flavour = flavour
@@ -18,7 +18,7 @@
 //  masalaChai.flavour = "masala"
 
 
-class Chai{
+class wChai{
     public flavour: string = "masala"
     private secret = "cardamon"
     reveal(){
