@@ -10,7 +10,7 @@ type Chai = {
 }
 
 const menu: Chai[] = [
-    {name: "masala", price: 345}
+    {name: "masala", price: 345},
     {name: "adrak", price: 45}
 ]
 
