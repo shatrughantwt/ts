@@ -1,5 +1,7 @@
 import "./App.css";
+import { Card } from "./components/Card";
 import { Counter } from "./components/Counter";
+import { OrderForm } from "./components/OderForm";
 import { WaterCard } from "./components/WaterCard";
 import { WaterList } from "./components/WaterLIst";
 import type { Water } from "./types";
@@ -29,6 +31,19 @@ function App() {
     </div>
     <div>
       <WaterList items={menu}/>
+    </div>
+    <div>
+      <OrderForm 
+      onSubmit={(order)=>{
+        console.log("Placed", order.name, order.cups);
+      }}
+      />
+    </div>
+    <div>
+      <Card 
+      title="Water or TS"
+      footer={<button>Order Now</button>}
+      />
     </div>
     </>
   );
